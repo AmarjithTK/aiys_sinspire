@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adishesha Institute of Yogic Sciences</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#5D9C59',
+                            light: '#A7D7A5',
+                            dark: '#3D6B39',
+                        },
+                        secondary: {
+                            DEFAULT: '#E86A33',
+                            light: '#F5A978',
+                            dark: '#B84A1B',
+                        },
+                        neutral: '#F2F0EB',
+                        text: {
+                            dark: '#2C3333',
+                            medium: '#5A5A5A',
+                            light: '#F9F9F9',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        accent: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans text-text-dark bg-neutral">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white/95 shadow-sm z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo Area -->
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-primary-light flex items-center justify-center shadow-sm overflow-hidden">
+                    <img src="images/logo.png" alt="Adishesha Logo" class="w-8 h-8">
+                </div>
+                <div class="font-serif text-xl font-semibold text-primary-dark relative after:absolute after:bottom-0 after:left-0 after:w-1/3 after:h-0.5 after:bg-secondary">
+                    Adishesha Institute
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex gap-8">
+                    <li><a href="#" class="font-accent text-sm font-medium py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-secondary after:transition-all after:duration-300 text-secondary">Home</a></li>
+                    <li><a href="#" class="font-accent text-sm font-medium py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-secondary after:transition-all after:duration-300">Programs</a></li>
+                    <li><a href="#" class="font-accent text-sm font-medium py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-secondary after:transition-all after:duration-300">Faculty</a></li>
+                    <li><a href="#" class="font-accent text-sm font-medium py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-secondary after:transition-all after:duration-300">Testimonials</a></li>
+                    <li><a href="#" class="font-accent text-sm font-medium py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-secondary after:transition-all after:duration-300">About Us</a></li>
+                    <li><a href="#" class="font-accent text-sm font-medium py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-secondary after:transition-all after:duration-300">Contact</a></li>
+                    <li><a href="#" class="font-accent text-sm font-medium bg-secondary text-white px-6 py-2 rounded-full shadow-md hover:bg-secondary-dark transition-all duration-300">Enroll Now</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-primary-dark text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation (hidden by default) -->
+    <div class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 md:hidden">
+        <!-- Mobile menu content here -->
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-[72px]">
+        <!-- Hero Section -->
+        <section class="relative min-h-[90vh] lg:grid lg:grid-cols-2">
+            <!-- Decorative Circles -->
+            <div class="absolute top-[-150px] left-[-150px] w-[300px] h-[300px] rounded-full bg-primary-light opacity-10"></div>
+            <div class="absolute bottom-[-100px] right-[20%] w-[200px] h-[200px] rounded-full bg-primary-light opacity-10"></div>
+            
+            <!-- Left Content Area -->
+            <div class="flex flex-col justify-center p-8 lg:p-16 max-w-2xl">
+                <span class="inline-block bg-primary-light text-primary-dark text-xs font-accent uppercase tracking-wider py-2 px-4 rounded-full font-semibold mb-8">Holistic Wellbeing</span>
+                
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">Discover the Ancient Wisdom of Yoga in a Modern Context</h1>
+                
+                <p class="text-text-medium text-lg mb-10">Our immersive yoga teacher training programs blend traditional practices with contemporary science to nurture your journey towards physical, mental, and spiritual harmony.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="#" class="bg-secondary text-white font-accent font-medium py-4 px-8 rounded shadow-lg hover:shadow-xl hover:bg-secondary-dark transition-all duration-300 text-center relative overflow-hidden">Begin Your Journey</a>
+                    <a href="#" class="border border-text-dark text-text-dark font-accent font-medium py-4 px-8 rounded hover:bg-text-dark hover:text-white transition-all duration-300 text-center">Explore Programs</a>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                    <div class="flex items-center">
+                        <div class="flex text-secondary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-text-medium text-sm ml-2">5.0 from 200+ students</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1585934037619-06e8eac7f690?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&q=80" alt="Certification" class="w-8 h-8 rounded-full">
+                        <span class="text-text-medium text-sm">Internationally Recognized</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Image Area -->
+            <div class="relative h-[50vh] lg:h-auto overflow-hidden">
+                <div class="absolute inset-0 bg-secondary opacity-20 clip-hero-shape"></div>
+                <img src="https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80" alt="Yoga Practice" class="h-full w-full object-cover">
+                
+                <div class="absolute bottom-2 right-2 text-white text-xs opacity-70 text-shadow">
+                    Photo by <a href="https://unsplash.com/" class="underline">Unsplash</a>
+                </div>
+                
+                <!-- Feature Icons -->
+                <div class="hidden lg:flex absolute bottom-8 right-16 gap-4">
+                    <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-secondary text-xl cursor-pointer">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-secondary text-xl cursor-pointer">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-secondary text-xl cursor-pointer">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="hidden lg:flex absolute bottom-10 left-16 items-center gap-3 text-text-medium text-sm animate-pulse">
+                <i class="fas fa-arrow-down"></i>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="py-20 px-4 lg:px-8">
+            <div class="container mx-auto">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <span class="inline-block bg-primary-light text-primary-dark text-xs font-accent uppercase tracking-wider py-2 px-4 rounded-full font-semibold mb-4">Our Programs</span>
+                    <h2 class="font-serif text-4xl mb-6">Comprehensive Teacher Training Programs</h2>
+                    <p class="text-text-medium">Transform your passion for yoga into a fulfilling career with our internationally recognized certification courses.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Program Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+                        <div class="p-1 bg-primary-light"></div>
+                        <div class="p-8">
+                            <div class="w-16 h-16 bg-primary-light/30 rounded-full flex items-center justify-center text-primary-dark text-2xl mb-6">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl mb-4">Level One (200 Hours)</h3>
+                            <p class="text-text-medium mb-6">Perfect for beginners and those looking to build a solid foundation in yoga teaching methodology.</p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                    <span>Foundational asanas & alignment</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                    <span>Basic teaching methodology</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                    <span>Philosophy fundamentals</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="inline-flex items-center text-primary-dark hover:text-secondary transition-colors duration-300">
+                                Learn More <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Program Card 2 (Featured) -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform lg:-translate-y-4 relative">
+                        <div class="absolute top-6 right-6 bg-secondary text-white text-xs py-1 px-3 rounded-full font-accent">Most Popular</div>
+                        <div class="p-1 bg-secondary"></div>
+                        <div class="p-8">
+                            <div class="w-16 h-16 bg-secondary-light/30 rounded-full flex items-center justify-center text-secondary-dark text-2xl mb-6">
+                                <i class="fas fa-om"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl mb-4">Level Two (400 Hours)</h3>
+                            <p class="text-text-medium mb-6">Advanced training for experienced practitioners seeking to deepen their practice and expand teaching skills.</p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check-circle text-secondary"></i>
+                                    <span>Advanced postures & sequencing</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check-circle text-secondary"></i>
+                                    <span>Yoga therapy applications</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check-circle text-secondary"></i>
+                                    <span>Specialized teaching tracks</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="inline-flex items-center text-secondary hover:text-secondary-dark transition-colors duration-300">
+                                Learn More <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Program Card 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
+                        <div class="p-1 bg-primary-light"></div>
+                        <div class="p-8">
+                            <div class="w-16 h-16 bg-primary-light/30 rounded-full flex items-center justify-center text-primary-dark text-2xl mb-6">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl mb-4">Specialized Workshops</h3>
+                            <p class="text-text-medium mb-6">Focused learning experiences in specific aspects of yoga practice and teaching.</p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                    <span>Weekend intensives</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                    <span>Guest teacher sessions</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                    <span>Continuing education</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="inline-flex items-center text-primary-dark hover:text-secondary transition-colors duration-300">
+                                Learn More <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="#" class="inline-block bg-secondary text-white font-accent font-medium py-4 px-8 rounded-lg shadow-md hover:shadow-xl hover:bg-secondary-dark transition-all duration-300">View All Programs</a>
+                </div>
+            </div>
+        </section>
+                <!-- Benefits Section -->
+        <section class="py-20 px-4 lg:px-8 bg-white">
+            <div class="container mx-auto">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <span class="inline-block bg-primary-light text-primary-dark text-xs font-accent uppercase tracking-wider py-2 px-4 rounded-full font-semibold mb-4">Why Choose Us</span>
+                    <h2 class="font-serif text-4xl mb-6">Benefits of Training at Adishesha</h2>
+                    <p class="text-text-medium">Our comprehensive approach ensures you receive the highest quality education and support throughout your yoga journey.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Benefit 1 -->
+                    <div class="group bg-neutral rounded-lg p-8 hover:bg-primary hover:bg-opacity-5 transition-all duration-300 flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-primary-light bg-opacity-30 rounded-full flex items-center justify-center text-3xl text-primary-dark mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-3">Government Recognition</h3>
+                        <p class="text-text-medium">Certification by Ministry of AYUSH ensures your credentials are recognized worldwide.</p>
+                    </div>
+                    
+                    <!-- Benefit 2 -->
+                    <div class="group bg-neutral rounded-lg p-8 hover:bg-primary hover:bg-opacity-5 transition-all duration-300 flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-primary-light bg-opacity-30 rounded-full flex items-center justify-center text-3xl text-primary-dark mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-3">Expert Faculty</h3>
+                        <p class="text-text-medium">Learn from internationally renowned yoga masters with decades of teaching experience.</p>
+                    </div>
+                    
+                    <!-- Benefit 3 -->
+                    <div class="group bg-neutral rounded-lg p-8 hover:bg-primary hover:bg-opacity-5 transition-all duration-300 flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-primary-light bg-opacity-30 rounded-full flex items-center justify-center text-3xl text-primary-dark mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <i class="fas fa-laptop-house"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-3">Flexible Learning</h3>
+                        <p class="text-text-medium">Choose from online, offline or hybrid training options to fit your schedule and preferences.</p>
+                    </div>
+                    
+                    <!-- Benefit 4 -->
+                    <div class="group bg-neutral rounded-lg p-8 hover:bg-primary hover:bg-opacity-5 transition-all duration-300 flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-primary-light bg-opacity-30 rounded-full flex items-center justify-center text-3xl text-primary-dark mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-3">Financial Freedom</h3>
+                        <p class="text-text-medium">Gain skills to earn over ₹1,00,000 monthly as a certified yoga professional.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-20">
+                    <!-- Personal Growth Highlight -->
+                    <div class="bg-gradient-to-r from-primary-light/30 to-secondary-light/20 rounded-2xl overflow-hidden">
+                        <div class="grid md:grid-cols-2 items-center">
+                            <div class="p-8 lg:p-12 order-2 md:order-1">
+                                <h3 class="font-serif text-3xl mb-4">Transform Both Body & Mind</h3>
+                                <p class="text-text-medium mb-6">Beyond professional certification, our program offers profound personal growth. Experience enhanced physical vitality, mental clarity, and spiritual awakening as you progress through our curriculum.</p>
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-secondary">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <p class="font-medium">Improved physical well-being</p>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-secondary">
+                                            <i class="fas fa-brain"></i>
+                                        </div>
+                                        <p class="font-medium">Enhanced mental clarity & focus</p>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-secondary">
+                                            <i class="fas fa-om"></i>
+                                        </div>
+                                        <p class="font-medium">Deeper spiritual connection</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="inline-flex items-center text-primary-dark font-medium mt-8 hover:text-secondary transition-all duration-300">
+                                    Read Student Transformations <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                            <div class="h-full min-h-[350px] relative order-1 md:order-2">
+                                <img src="https://images.unsplash.com/photo-1599447292195-40bad902adcd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Yoga Practice" class="absolute inset-0 w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Community Impact -->
+                    <div class="mt-12 bg-white rounded-2xl overflow-hidden shadow-lg">
+                        <div class="grid md:grid-cols-2 items-center">
+                            <div class="h-full min-h-[350px] relative">
+                                <img src="https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Community Yoga" class="absolute inset-0 w-full h-full object-cover">
+                            </div>
+                            <div class="p-8 lg:p-12">
+                                <h3 class="font-serif text-3xl mb-4">Create Community Impact</h3>
+                                <p class="text-text-medium mb-6">Share the transformative power of yoga and contribute to building healthier communities. Our graduates are making meaningful changes across healthcare, education, corporate wellness, and beyond.</p>
+                                <div class="flex flex-wrap gap-3 mb-8">
+                                    <span class="bg-primary-light/30 text-primary-dark py-2 px-4 rounded-full text-sm font-accent">Healthcare Integration</span>
+                                    <span class="bg-primary-light/30 text-primary-dark py-2 px-4 rounded-full text-sm font-accent">Corporate Wellness</span>
+                                    <span class="bg-primary-light/30 text-primary-dark py-2 px-4 rounded-full text-sm font-accent">School Programs</span>
+                                    <span class="bg-primary-light/30 text-primary-dark py-2 px-4 rounded-full text-sm font-accent">Community Outreach</span>
+                                </div>
+                                <a href="#" class="inline-flex items-center bg-secondary text-white font-accent font-medium py-3 px-6 rounded shadow-md hover:bg-secondary-dark transition-all duration-300">
+                                    Learn About Our Impact <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial Preview -->
+                <div class="mt-20 text-center">
+                    <div class="inline-block mx-auto bg-secondary/10 rounded-full p-4 mb-6">
+                        <i class="fas fa-quote-right text-3xl text-secondary"></i>
+                    </div>
+                    <blockquote class="max-w-3xl mx-auto">
+                        <p class="font-serif text-2xl lg:text-3xl italic mb-6">The Adishesha Institute changed my life. I am now a confident yoga teacher with a thriving practice that serves over 200 regular clients.</p>
+                        <footer>
+                            <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-2">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Anjali Sharma" class="w-full h-full object-cover">
+                            </div>
+                            <cite class="not-italic font-medium">Anjali Sharma</cite>
+                            <p class="text-text-medium text-sm">Certified Yoga Trainer, Batch of 2022</p>
+                        </footer>
+                    </blockquote>
+                    <a href="#" class="inline-flex items-center text-primary-dark font-medium mt-8 hover:text-secondary transition-all duration-300">
+                        Read More Success Stories <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+                <!-- Gallery Section -->
+        <section class="py-20 px-4 lg:px-8 bg-neutral">
+            <div class="container mx-auto">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <span class="inline-block bg-primary-light text-primary-dark text-xs font-accent uppercase tracking-wider py-2 px-4 rounded-full font-semibold mb-4">Our Gallery</span>
+                    <h2 class="font-serif text-4xl mb-6">Experience Adishesha Through Images</h2>
+                    <p class="text-text-medium">Glimpses of our campus, practice sessions, events, and the journey of our students.</p>
+                </div>
+                
+                <!-- Gallery Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+                    <!-- Gallery Item 1 -->
+                    <div class="relative group overflow-hidden rounded-lg h-64 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yoga Class" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                            <h3 class="text-white font-serif text-lg">Morning Practice Session</h3>
+                            <p class="text-white/80 text-sm">Students practicing Surya Namaskar</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 2 -->
+                    <div class="relative group overflow-hidden rounded-lg h-64 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1599447292195-40bad902adcd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Meditation" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                            <h3 class="text-white font-serif text-lg">Meditation Techniques</h3>
+                            <p class="text-white/80 text-sm">Advanced pranayama workshop</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 3 -->
+                    <div class="relative group overflow-hidden rounded-lg h-64 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Asana Practice" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                            <h3 class="text-white font-serif text-lg">Advanced Asana</h3>
+                            <p class="text-white/80 text-sm">Level Two certification training</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 4 -->
+                    <div class="relative group overflow-hidden rounded-lg h-64 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1593810450967-f9c2866b1fd8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Group Meditation" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                            <h3 class="text-white font-serif text-lg">Group Meditation</h3>
+                            <p class="text-white/80 text-sm">Morning sadhana practice</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 5 -->
+                    <div class="relative group overflow-hidden rounded-lg h-64 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1604480133435-25b86862d276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yoga Retreat" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                            <h3 class="text-white font-serif text-lg">Campus Grounds</h3>
+                            <p class="text-white/80 text-sm">Our serene learning environment</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 6 -->
+                    <div class="relative group overflow-hidden rounded-lg h-64 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1599447292195-40bad902adcd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Workshop" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                            <h3 class="text-white font-serif text-lg">Guest Workshop</h3>
+                            <p class="text-white/80 text-sm">International yoga master visit</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 7 -->
+                    <div class="relative group overflow-hidden rounded-lg h-64 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1616699002805-0741e1e4a9c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Meditation Instructor" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                            <h3 class="text-white font-serif text-lg">Faculty Session</h3>
+                            <p class="text-white/80 text-sm">Teaching meditation techniques</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Gallery Item 8 -->
+                    <div class="relative group overflow-hidden rounded-lg h-64 cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1600618528240-fb9fc964eca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Graduation" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                            <h3 class="text-white font-serif text-lg">Graduation Day</h3>
+                            <p class="text-white/80 text-sm">Celebrating student achievements</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery CTA -->
+                <div class="mt-12 text-center">
+                    <a href="#" class="inline-flex items-center gap-2 bg-white text-secondary font-accent font-medium py-3 px-6 rounded-lg shadow-md hover:shadow-xl hover:bg-secondary hover:text-white transition-all duration-300">
+                        <i class="fas fa-images"></i>
+                        View Full Gallery
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="py-20 px-4 lg:px-8 bg-gradient-to-r from-secondary to-secondary-dark text-white relative overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-white opacity-10"></div>
+            <div class="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-white opacity-10"></div>
+            
+            <div class="container mx-auto relative z-10">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="inline-block bg-white/20 text-white text-xs font-accent uppercase tracking-wider py-2 px-4 rounded-full font-semibold mb-4">Stay Connected</span>
+                        <h2 class="font-serif text-4xl mb-6">Join Our Community of Yogis</h2>
+                        <p class="mb-6">Subscribe to receive updates on upcoming programs, events, and exclusive yoga resources for your practice and teaching journey.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Monthly newsletter with practice tips</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Early bird discounts on workshops</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Free yoga resources and guides</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="text-sm font-medium block mb-1">Your Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" class="w-full px-4 py-3 rounded bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-white/60 text-white">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="text-sm font-medium block mb-1">Email Address</label>
+                                <input type="email" id="email" placeholder="Enter your email" class="w-full px-4 py-3 rounded bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-white/60 text-white">
+                            </div>
+                            
+                            <div>
+                                <label for="interest" class="text-sm font-medium block mb-1">I'm interested in</label>
+                                <select id="interest" class="w-full px-4 py-3 rounded bg-white/20 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 text-white">
+                                    <option value="" class="bg-secondary">Select your interest</option>
+                                    <option value="level-one" class="bg-secondary">Level One Certification</option>
+                                    <option value="level-two" class="bg-secondary">Level Two Certification</option>
+                                    <option value="workshops" class="bg-secondary">Specialized Workshops</option>
+                                    <option value="general" class="bg-secondary">General Information</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-white text-secondary font-accent font-medium py-3 px-6 rounded shadow-md hover:shadow-xl hover:bg-neutral transition-all duration-300">
+                                Subscribe Now
+                            </button>
+                            
+                            <p class="text-xs text-center text-white/70">We respect your privacy. Unsubscribe at any time.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="bg-text-dark text-text-light">
+            <!-- Main Footer -->
+            <div class="container mx-auto py-16 px-4 lg:px-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <!-- Column 1: About -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-full bg-primary-light flex items-center justify-center shadow-sm overflow-hidden">
+                                <img src="images/logo.png" alt="Adishesha Logo" class="w-6 h-6">
+                            </div>
+                            <div class="font-serif text-lg font-semibold text-white">
+                                Adishesha Institute
+                            </div>
+                        </div>
+                        <p class="text-text-light/70 mb-6">Transforming lives through authentic yogic education since 1998. Our internationally recognized programs blend traditional wisdom with modern approaches.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Column 2: Quick Links -->
+                    <div>
+                        <h3 class="font-serif text-xl mb-6">Quick Links</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>About Us</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Programs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Faculty</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Student Success</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Resources</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Gallery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3: Programs -->
+                    <div>
+                        <h3 class="font-serif text-xl mb-6">Our Programs</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Level One (200 Hours)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Level Two (400 Hours)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Weekend Workshops</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Online Courses</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-text-light/70 hover:text-secondary flex items-center gap-2">
+                                    <i class="fas fa-chevron-right text-xs"></i>
+                                    <span>Retreats & Intensives</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 4: Contact -->
+                    <div>
+                        <h3 class="font-serif text-xl mb-6">Contact Us</h3>
+                        <ul class="space-y-4">
+                            <li class="flex gap-3">
+                                <i class="fas fa-map-marker-alt text-secondary mt-1"></i>
+                                <span class="text-text-light/70">123 Yoga Street, Wellness City<br>Karnataka, India 560001</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i class="fas fa-phone-alt text-secondary mt-1"></i>
+                                <span class="text-text-light/70">+91 98765 43210</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i class="fas fa-envelope text-secondary mt-1"></i>
+                                <span class="text-text-light/70">info@adishesha.com</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i class="fas fa-clock text-secondary mt-1"></i>
+                                <span class="text-text-light/70">
+                                    Mon-Fri: 8:00 AM - 6:00 PM<br>
+                                    Sat: 9:00 AM - 1:00 PM
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright Bar -->
+            <div class="border-t border-white/10 py-6">
+                <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-text-light/60 text-sm">&copy; 2025 Adishesha Institute of Yogic Sciences. All rights reserved.</p>
+                    <div class="flex gap-4 mt-4 md:mt-0">
+                        <a href="#" class="text-text-light/60 text-sm hover:text-secondary">Privacy Policy</a>
+                        <a href="#" class="text-text-light/60 text-sm hover:text-secondary">Terms of Service</a>
+                        <a href="#" class="text-text-light/60 text-sm hover:text-secondary">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll To Top Button -->
+            <button class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-secondary text-white shadow-lg flex items-center justify-center hover:bg-secondary-dark transition-colors z-50">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </footer>
+        
+        <!-- Script for Scroll To Top -->
+        <script>
+            // Scroll to top functionality
+            document.querySelector('button:has(.fa-arrow-up)').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Show/hide scroll to top button based on scroll position
+            window.addEventListener('scroll', function() {
+                const scrollToTopBtn = document.querySelector('button:has(.fa-arrow-up)');
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.remove('opacity-0');
+                    scrollToTopBtn.classList.add('opacity-100');
+                } else {
+                    scrollToTopBtn.classList.remove('opacity-100');
+                    scrollToTopBtn.classList.add('opacity-0');
+                }
+            });
+        </script>
+
+        <!-- More sections would continue here following similar patterns -->
+    </main>
+</body>
+</html>
